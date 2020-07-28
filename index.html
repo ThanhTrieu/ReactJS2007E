@@ -1,18 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="Nguyen Thanh Trieu"/>
-    <!-- comment html -->
-    <meta name="keyword" content="quan jean, ao thun"/>
-    <meta name="description" content="shop quan ao thoi trang"/>
-    <title>Reactjs 2007</title>
-    <link rel="icon" href="img/icon.png" type="image/png" sizes="60">
-</head>
-
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Nguyen Thanh Trieu"/>
+        <!-- comment html -->
+        <meta name="keyword" content="quan jean, ao thun"/>
+        <meta name="description" content="shop quan ao thoi trang"/>
+        <title>Reactjs 2007</title>
+        <link rel="icon" href="img/icon.png" type="image/png" sizes="60"/>
+        <link rel="stylesheet" href="css/test.css" type="text/css" />
+    </head>
     <body>
-    </body>
+        <!-- HTML van ban, tieu de  va dinh dang van ban -->
+        <h1 class="title title2" id="title" name="title title2">The h1</h1>
+        <h6 id="title2" class="title" name="title">The h6</h6>
+        <p>Day la van ban</p>
+        <h2>
+            <i>day la chu in nghieng</i>
+        </h2>
+        <h2><em>day la chu in nghieng</em></h2>
+        <p>ax<sup>2</sup> + bx + c = 0</p>
+        <p>H<sub>2</sub> + O<sub>2</sub> = H<sub>2</sub>O</p>
+        <p><b>Liver</b> vo dich NHA</p>
+        <p>
+            <strong>Liver</strong> vo dich NHA
+        </p>
+        <p>chung ta dang hoc <mark>HTML</mark></p>
+        <!-- HTML ve danh sach hien thi -->
+        <!-- danh sach khong co thu tu -->
+        <ul>
+            <li>AAAAAA</li>
+            <li>AAAAAA</li>
+            <li>AAAAAA</li>
+        </ul>
+         <!-- danh sach co thu tu -->
+         <ol>
+            <li>AAAAAA</li>
+            <li>AAAAAA</li>
+            <li>AAAAAA</li>
+        </ol>
+        <!-- HTML lien ket -->
+        <a href="https://www.facebook.com/groups/307415723717862/" target="_blank" title="day la trang fb">goto facebook</a>
+        <a href="product.html"> san pham</a>
+        <!-- NEO link / Anchor link -->
+        <a href="#title"> san pham</a>
+        <a href="#"> contact</a>
 
+        <!-- HTML bang bieu du lieu -->
+        <table width="100%" border="1" cellspacing="0" cellpadding="0">
+            <thead>
+                <tr>
+                    <th>MaSV</th>
+                    <th>Ho ten</th>
+                    <th>Que quan</th>
+                    <th>Ngay sinh</th>
+                    <th>Gioi tinh</th>
+                    <th>Dien thoai</th>
+                    <th>Hoc bong</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>113</td>
+                    <td>Van Teo</td>
+                    <td>Nam Dinh</td>
+                    <td>1999</td>
+                    <td>Nam</td>
+                    <td>08907897</td>
+                    <td>15000000</td>
+                </tr>
+                <tr>
+                    <td>114</td>
+                    <td>Van Ty</td>
+                    <td>Nam Dinh</td>
+                    <td>1999</td>
+                    <td>Nam</td>
+                    <td>08907897</td>
+                    <td>15000000</td>
+                </tr>
+                <tr>
+                    <td>115</td>
+                    <td>Van Tu</td>
+                    <td>Nam Dinh</td>
+                    <td>1999</td>
+                    <td>Nam</td>
+                    <td>08907897</td>
+                    <td>15000000</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="6">Tong hoc bong</td>
+                    <td>213242343</td>
+                </tr>
+            </tfoot
+        </table>
+
+        <table width="100%" border="1" cellspacing="0" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>thoi gian</th>
+                    <th colspan="3">Tran dau</th>
+                    <th>Truc tiep</th>
+                    <th>Kenh truyen hinh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="6">VĐQG Italia - vòng 37</td>
+                </tr>
+                <tr>
+                    <td>30/07</td>
+                    <td>Parma</td>
+                    <td></td>
+                    <td>Atalanta</td>
+                    <td></td>
+                    <td rowspan="2">FPTPlay</td>
+                </tr>
+                <tr>
+                    <td>30/07</td>
+                    <td>Parma</td>
+                    <td></td>
+                    <td>Atalanta</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- HTML media -->
+        <img width="300" height="300" src="img/icon.png" alt="day la anh" title="day la anh" />
+        <br/><br/>
+        <audio src="media/test.mp3" loop controls></audio>
+        <br/><br/>
+        <video src="media/test.mp4" loop controls></video>
+        <!-- HTML youtube -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZijnSFqzWFk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br/><br/>
+        <iframe width="560" height="315" src="https://vnexpress.ne"></iframe>
+        <br/><br/>
+        <canvas style="width:500px; height: 500px; border:1px sloid red;"></canvas>
+        <br><br>
+        <!-- HTML Form -->
+        <form action="" method="">
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username" />
+            <br/><br/>
+            <label for="pass">Password</label>
+            <input type="password" id="pass" name="password" />
+            <br/><br/>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+            <br/><br/>
+            <label for="url">URL</label>
+            <input type="url" id="url" name="url" />
+            <br><br>
+            <label for="color">Color</label>
+            <input type="color" id="color" name="color" />
+            <br><br>
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" />
+            <br><br>
+            <label for="gender">Chon gioi tinh</label>
+            <select id="gender" name="gender">
+                <option value="">-- Gioi Tinh --</option>
+                <option value="1">Nam</option>
+                <option value="0">Nu</option>
+            </select>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
 </html>
