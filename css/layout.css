@@ -1,0 +1,79 @@
+header {
+  width: 100%;
+  height: 80px;
+}
+.header__logo {
+  width:30%;
+  background-color: aquamarine;
+  height: 80px;
+  float: left;
+}
+.header__banner {
+  width:70%;
+  background-color: aqua;
+  height: 80px;
+  float: left;
+}
+/* for NAV */
+nav {
+  width:100%;
+  height: 40px;
+  background-color:black;
+}
+.nav__menu {
+  text-align: center;
+}
+.nav__menu li {
+  display: inline-block;
+  line-height: 40px;
+  padding: 0px 20px;
+}
+.nav__menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+main {
+  width:100%;
+  height:650px;
+}
+.main__left {
+  width:80%;
+  height: 100%;
+  float:left;
+}
+.main__right {
+  width:20%;
+  height: 100%;
+  float:left;
+}
+.main__left section {
+  width:100%;
+  height:50%;
+  background-color:pink;
+}
+.main__left article {
+  width:100%;
+  height:50%;
+  background-color:violet;
+}
+.main__right aside {
+  width:100%;
+  height: 100%;
+  background-color:yellowgreen;
+}
+
+footer {
+  width:100%;
+  height: 200px;
+  background-color:black;
+}
+.footer__container {
+  width:980px;
+  margin:auto;
+  padding: 20px 5px;
+}
+.footer__container h5{
+  color:white;
+  text-align: center;
+}

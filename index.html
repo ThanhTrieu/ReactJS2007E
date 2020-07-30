@@ -164,10 +164,28 @@
             <select id="gender" name="gender">
                 <option value="">-- Gioi Tinh --</option>
                 <option value="1">Nam</option>
-                <option value="0">Nu</option>
+                <option value="0" selected>Nu</option>
             </select>
-            <br><br>
+            <br/><br/>
+            <label for="age">Chon Do tuoi</label>
+            <input type="checkbox" name="age" id="age" checked /> <span>18-25</span>
+            <input type="checkbox" name="age2" id="age2"/> <span>25-35</span>
+            <input type="checkbox" name="age3" id="age3"/> <span>35-50</span>
+            <br/><br/>
+            <label for="confirm">Xac nhan</label>
+            <input type="radio" name="confirm" id="confirm1" checked /> <span>Yes</span>
+            <input type="radio" name="confirm" id="confirm2" /> <span>No</span>
+            <br/><br/>
             <button type="submit">Submit</button>
+            <br/><br/>
+            <button type="button">Button</button>
+            <br/><br/>
+            <label for="money">Money</label>
+            <input type="number" id="money"/>
+            <br/><br/>
+            <label for="file">Moi chon file</label>
+            <input type="file" id="file" name="file"/>
         </form>
+        <!-- HTML layout -->
     </body>
 </html>

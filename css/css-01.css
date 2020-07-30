@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ID selector */
+/* #title {
+  color: blue;
+} */
+
+h1.title {
+  color: red;
+}
+
+/* class selector */
+.title {
+  color: yellow !important;
+}
+
+/* HTML selector */
+h1 {
+  color: yellowgreen;
+}
+/* attributes selector*/
+input[value] {
+  border: 2px solid red;
+}
+input[value='teo'] {
+  border: 2px solid blue;
+}
+p[class~="html"] {
+  color: green;
+}
+a[href^="http"] {
+  color: red;
+}
+a[href$="net"] {
+  color: yellow;
+}
+p[class*="ml"] {
+  color: violet;
+}
+h2[class|="last"]{
+  color: pink;
+}
