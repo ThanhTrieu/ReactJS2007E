@@ -1,0 +1,86 @@
+.header + .nav {
+  width: 300px;
+  height: 300px;
+  background-color:yellow;
+}
+.header ~ .content {
+  width: 300px;
+  /* height: 300px; */
+  /* background-color:violet; */
+}
+.header__logo > .header__logo--logo1 {
+  color: blue;
+}
+.header .header__logo--logo2 {
+  color: red;
+}
+.header__logo > .header__logo--logo1, .header__logo--logo2 {
+  font-size: 20px;
+  font-style: italic;
+}
+section.content :first-child {
+  color: red;
+}
+section.content :first-of-type {
+  color: red;
+}
+section.content :last-child {
+  color: blue;
+}
+section.content :last-of-type {
+  color: blue;
+}
+section.content :nth-child(3) {
+  color:yellow;
+}
+section.content :nth-of-type(3) {
+  color:orange;
+}
+section.content :nth-last-child(3) {
+  color: pink;
+}
+section.content :nth-last-of-type(3) {
+  color: green;
+}
+section.content div.content__box :only-child {
+  color: red;
+}
+div.main input[class="main__input"]:focus {
+  width: 300px;
+  height: 35px;
+  border-radius: 20px;
+}
+div.main input[class="main__checkbox"]:checked {
+  width: 100px;
+  height: 100px;
+}
+div.main a:active {
+  color:yellow;
+}
+div.main a:visited {
+  color:green;
+}
+div.main a:link {
+  color: red;
+}
+div.main a:hover {
+  color: pink;
+}
+div.pesudo-element p::first-letter {
+  color:red;
+  font-size: 50px;
+}
+div.pesudo-element p::first-line {
+  color: blue;
+}
+div.pesudo-element p::before {
+  /* content: "ReactJS"; */
+  content: url("../img/icon.png");
+}
+div.pesudo-element p::after {
+  /* content: "ReactJS"; */
+  content: url("../img/icon.png");
+}
+div.pesudo-element p::selection {
+  color: yellow;
+}
