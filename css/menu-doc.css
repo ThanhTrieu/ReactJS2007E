@@ -1,0 +1,53 @@
+/* common css */
+:root {
+  --backgroundMenu: #78B43D;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  /* 1rem = 10px */
+  /* 100% = 16px */
+}
+.container {
+  width:20rem;
+  margin-left: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  min-height: 20rem;
+  background-color: var(--backgroundMenu);
+}
+.nav__item {
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid white;
+  cursor: pointer;
+  position: relative;
+}
+.nav__item:last-child {
+  border: none;
+}
+.nav__link {
+  padding: 0 0.8rem;
+  color: black;
+}
+.nav__item:hover {
+  background-color:green;
+}
+.nav__item:hover > a.nav__link {
+  color: white;
+}
+/* dropdown menu */
+.nav__dropdown {
+  display: none;
+  width:20rem;
+  background-color: var(--backgroundMenu);
+}
+.nav__item:hover > .nav__dropdown {
+  display: block;
+  position:absolute;
+  left: 20rem;
+  top: 0;
+}
