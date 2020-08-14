@@ -1,0 +1,45 @@
+@import 'setting-example.css';
+.wrapper {
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.header {
+	min-height: 80rem;
+	background-image: url("../img/img-bg-header.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start
+} 
+.nav {
+	margin-top: 3rem;
+}
+.nav__menu {
+	display: flex;
+	align-items: center;
+}
+.nav__item {
+	padding-left: 4rem;
+	padding-right: 4rem;
+	position: relative;
+}
+.nav__item:first-child::after,
+.nav__item:nth-child(4)::after {
+	content: ".";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	font-size: 2rem;
+}
+.nav__link {
+	position: relative;
+	display: block;
+	text-transform: uppercase;
+	color: var(--title-color);
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: 700;
+}

@@ -52,7 +52,7 @@ a {
   min-width: 60rem;
 }
 .nav__item:hover > .nav__dropdown{
-  display: block;
+  display: table;
   position:absolute;
   top: 4rem;
   left: 0;
