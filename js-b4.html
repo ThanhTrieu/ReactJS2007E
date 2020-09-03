@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS </title>
+</head>
+<body>
+  <input type="number" id="n1">
+  <br>
+  <input type="number" id="n2">
+  <br>
+  <button id="btn">Tinh tong</button>
+  <br>
+  <p id="result"></p>
+
+  <script>
+    // DOM : document object model
+    // mo hinh dac ta doi tuong trong van ban html
+    let btn = document.getElementById('btn');
+    console.log(btn);
+    btn.onclick = function(){
+      let input1 = document.getElementById('n1');
+      let input2 = document.getElementById('n2');
+      let val1 = input1.value; // lay dc gia tri tu input
+      let val2 = input2.value;// lay dc gia tri tu input
+      val1 = parseFloat(val1);
+      val2 = parseFloat(val2);
+      let sum = val1 + val2;
+      // hien thi ket qua
+      document.getElementById('result').innerHTML = sum;
+    }
+    /*
+    btn.addEventListener('click', function(){
+      //alert('Bam manh vao');
+      let input1 = document.getElementById('n1');
+      let input2 = document.getElementById('n2');
+      let val1 = input1.value; // lay dc gia tri tu input
+      let val2 = input2.value;// lay dc gia tri tu input
+      val1 = parseFloat(val1);
+      val2 = parseFloat(val2);
+      let sum = val1 + val2;
+      // hien thi ket qua
+      document.getElementById('result').innerHTML = sum;
+    });
+    */
+  </script>
+</body>
+</html>

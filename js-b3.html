@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>learning JS</title>
+</head>
+<body>
+  <h1>Hoc JS</h1>
+  <button onclick="clickMe();">Click me</button>
+  <input onchange="myChange(this);" type="text" onfocus="myFocus(this);" onblur="myBlur(this);">
+  <br>
+  <select onchange="chonGioiTinh(this);">
+    <option value="">--- chon gioi tinh ---</option>
+    <option value="1">Nam</option>
+    <option value="0">Nu</option>
+  </select>
+  <br>
+  <input
+    onkeyup="myKeyup(event)"
+    type="text"
+    onkeydown="myKeydown(this)"
+    onkeypress="myKeyPress(this)"
+  >
+  <div
+    style="width: 300px; height: 300px; background-color: yellow;"
+    onmousedown="myMousedown()"
+    onmouseup="myMouseup()"
+    onmousemove="myMousemove()"
+    onmouseover="myMouseover()"
+  >
+  </div>
+  <script src="js/js-b3.js" ></script>
+  <script>
+    function myMousedown(){
+      console.log('ban vua bam vao con chuot');
+    }
+    function onmouseup(){
+      console.log('tay ban vua buong khoi con chuot');
+    }
+    function myMousemove(){
+      console.log('ban vua di chuyen chuot');
+    }
+
+    function myKeyup(obj){
+      console.log('nguoi dung vua nha tay khoi ban phim');
+      let chk = obj.which || obj.keyCode;
+      console.log(chk);
+      if(chk === 13){
+        console.log('ban vua bam phim enter');
+      }
+    }
+
+    function myKeydown(obj){
+      console.log('nguoi dung vua nhan tay xuong ban phim')
+    }
+    function myKeyPress(obj){
+      console.log('nguoi dung dang giu tay o ban phim')
+    }
+    function chonGioiTinh(obj){
+      let gender = obj.value;
+      gender = parseInt(gender);
+      if(gender === 1){
+        console.log('gioi tinh ban la nam')
+      } else if(gender === 0){
+        console.log('gioi tinh ban la nu')
+      } else {
+        console.log('chiu cha biet')
+      }
+    }
+    function myChange(obj){
+      let data = obj.value;
+      console.log(data + ' su kien change');
+    }
+    function clickMe() {
+      alert('ban vua click vao toi');
+    }
+    function myFocus(obj){
+      let data = obj.value;
+      console.log(obj);
+      console.log(data + ' su kien focus');
+    }
+    function myBlur(obj){
+      let data = obj.value;
+      console.log(obj);
+      console.log(data + ' su kien blur');
+    }
+  </script>
+</body>
+</html>
